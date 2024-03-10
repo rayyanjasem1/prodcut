@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>product</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+ .attribution { position: absolute;
+  bottom: 0px;
+   font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+body{
+  background: hsl(30, 38%, 92%);
+}
+  .all{position: relative;
+    top: 125px;
+    left: 760px;
+    height: 450px;
+    width: 310px;
+    background-color: hsl(0, 0%, 100%);
+  border-bottom-right-radius: 13px;
+  border-top-right-radius: 13px;
+
+    z-index: 1;
+   
+  } 
+.img{ height: 450px; width: 310px;
+  position: relative;
+  bottom:450px;right: 311px;
+  border-bottom-left-radius: 13px;
+  border-top-left-radius: 13px;
+}
+.tital{ color: hsl(212, 21%, 14%);
+  padding-left: 30px;
+  padding-top: 0px;
+  margin-top: 10px;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+ line-height: 1.1;
+}
+.par{padding-left: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%); line-height: 1.7;
+}
+.Perfume{padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+ 
+
+}
+.h{padding-left: 30px;
+color:hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+
+}
+.hh{  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  position: relative;
+  left: 150px;
+  bottom:45px;
+  text-decoration:line-through;
+}
+.sub{padding:  15px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  position: relative;
+bottom: 35px;
+left: 40px;
+color:  hsl(0, 0%, 100%);
+background-color: hsl(158, 36%, 37%);
+border-color:hsl(158, 36%, 37%) ;
+border-radius: 10px; z-index: 2;
+border: solid;
+}
+.icon{
+padding-right: 10px;
+  
+
+ z-index: 3;
+}
+.sub:hover{
+  background-color: hsl(158, 45%, 24%);
+  border-color:  hsl(158, 45%, 24%);
+}
+
+
+  </style>
+</head>
+<body>
+<div class="all">
+  <h3 class="Perfume">Perfume</h3>
+
+  <h1 class="tital">Gabrielle <br> Essence Eau<br> De Parfum</h1>
+<div class="par">
+  A floral, solar and voluptuous <br>interpretation composed by <br>Olivier Polge, 
+  Perfumer-Creator <br>for the House of CHANEL.</div>
+
+  <h2 class="h">$149.99</h2>
+  <h5 class="hh">$169.99</h5>
+
+  <button class="sub" type= "submit"  > <span><svg class="icon" width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>   Add to Cart</span></button>
+  <img class="img" src="images/image-product-desktop.jpg" >
+  
+  
+  </div></div>
+  <div class="attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">rayyan jasem</a>.
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</body>
+</html>
